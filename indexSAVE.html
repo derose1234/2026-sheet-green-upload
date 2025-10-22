@@ -1,16 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />    -->
-    <title>2026 Green page with upload file 2026</title>
-    <style type="text/css">
-</style>
+    />
+    <title>Data Entry Form with File Upload</title>
   </head>
-  <body style="background-color: #C0C0C0">
-  <center>
+  <body>
     <section class="hero is-primary is-bold">
       <div class="hero-body">
         <div class="container">
@@ -18,138 +15,18 @@
         </div>
       </div>
     </section>
-    
-    
-    
-    
-    
-    
-    
     <form id="form" class="container m-4 pl-4">
-    <!--Entry Date     -->
       <div class="field">
-        <label class="label">Entry Date</label>
-        <div class="control">
-          <input
-            class="input"
-            type="date"
-            placeholder="Entry Date"
-            name="Entry Date" style="width: 212px"
-          />
-        </div>
-      </div>
-      <!--End Entry Date     -->
-      
-      <!--Last Contact     -->
-      <div class="field">
-        <label class="label">Last Contact</label>
-        <div class="control">
-          <input
-            class="input"
-            type="date"
-            placeholder="Last Contact"
-            name="Last Contact" style="width: 209px"
-          />
-        </div>
-      </div>
-
-      
-      <!-- End Last Contact    -->
-      
-      <div class="field">
-        <label class="label">Notes</label>
-        <div class="control">
-          <textarea
-            class="textarea"
-            placeholder="Notes"
-            name="Notes" style="width: 253px; height: 82px"
-          ></textarea>
-        </div>
-      </div>
-
-      
-      
-      
-      
-      
-       <!--dropdown -->
-            <div class="field">
-           <label class="label">Clinic or Doctor</label>
-    <select class="form-control form-control-sm" 
-    id="Clinic Or Doctor" 
-    name="Clinic or Doctor" required>
-      <option value="" selected>Choose...</option>
-      <option value="EyeHealth Northwest">EyeHealth Northwest 503-656-4221</option>
-      <option value="PROVIDENCE HEART CLINIC">PROVIDENCE HEART CLINIC (Alejandro Perez) 503-962-1000</option>
-      <option value="Dr Kevin J. Jamison">Neurological Specialties(Dr Kevin J. Jamison) 503-742-6900</option>
-      <option value="Other">Other</option>
-      <option value="Canby Immediate Care">Canby Immediate Care 503-483-9226</option>
-      <option value="Eastside Ortho">Eastside Ortho 503 659 1769</option> 
-      <option value="Willamette Falls Hostipal">Willamette Falls Hostipal 503-656-1631</option>
-      <option value="MyChart">MyChart</option>
-      <option value="Bolouri Dental Group">Bolouri Dental Group 503-654-0613 </option>
-      <option value="Fred Meyer">Fred Meyer 503-657-1483</option>
-      <option value="Providence Milwaukie Healing Place">Providence Milwaukie Healing Place(Hearing Aid) 503-513-8600</option>
-      <option value="Beavercreek Health Center">Beavercreek Health Center (Jennifer Moon) 503-655-8471</option>
-      <option value="Infectious-Disease">Infectious-Disease 503-216-7000</option>
-      <option value="Family Resource">Family Resource 971-231-2372</option>
-      <option value="Case Manager-Margie Conway">Case Manager-Margie Conway (Oregon Department of Human Services) 503-983-6150</option>
-      <option value="Oregon Spine Care">Oregon Spine Care (503) 828-1150</option>
-
-    </select>
-  <br>
-  </div>
-            <!--end dropdown -->
-            
-            
-             <div class="field">
-        <label for="phone">
-  Enter your phone number:<br />
-  <small>Format: 123-456-7890</small>
-</label>
-        <div class="control">
-         <input
-         type="tel"
-         id="Phone"
-         name="Phone"
-         placeholder="Phone"
-         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-         required style="width: 213px" />        </div>
-      </div>
-
-               <!--<div class="field">
-        <label class="label">Phone</label>
-        <div class="control">
-          <input
-            class="input"
-            type="tel"
-            placeholder="Phone"
-            name="Phone"
-          />
-        </div>
-      </div> 
-      -->
-
-            
-            
-
-        <div class="field">
-        <label class="label">Website</label>
+        <label class="label">Client Name</label>
         <div class="control">
           <input
             class="input"
             type="text"
-            placeholder="Website"
-            name="Website" style="width: 208px"
+            placeholder="Your Client Name"
+            name="Client Name"
           />
         </div>
       </div>
-      
-      
-      
-      
-      
-      <!-- -->
       <div class="field">
         <label class="label">Email</label>
         <div class="control">
@@ -157,63 +34,32 @@
             class="input"
             type="email"
             placeholder="Your Email"
-            name="Email" style="width: 206px"
+            name="Email"
           />
         </div>
       </div>
-      
-           
-     
-      
-      <!--     -->
-      
-      
       <div class="field">
-        <label class="label">Appointment Date</label>
+        <label class="label">Password</label>
+        <div class="control">
+          <input
+            class="input"
+            type="password"
+            placeholder="Your Password"
+            name="Password"
+          />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Date of Birth</label>
         <div class="control">
           <input
             class="input"
             type="date"
-            placeholder="Appointment Date"
-            name="Appointment Date" style="width: 203px"
+            placeholder="Your Date of Birth"
+            name="DOB"
           />
         </div>
       </div>
-      
-        <div class="field">
-        <label class="label">Appointment Time</label>
-        <div class="control">
-          <input
-            class="input"
-            type="time"
-            placeholder="Appointment Time"
-            name="Appointment Time" style="width: 198px"
-          />
-        </div>
-      </div>
-<div class="field">
-        <label class="label">Additional Information</label>
-        <div class="control">
-          <textarea
-            class="textarea"
-            placeholder="Any additional information"
-            name="Additional Information" style="width: 275px; height: 91px"
-          ></textarea>
-        </div>
-      </div>
-      
-      
-       <div class="field">
-        <label class="label">Followup</label>
-        <div class="control">
-          <label class="checkbox">
-            <input type="checkbox" 
-            name="Followup" 
-            value="yes" /> 
-          </label>
-        </div>
-      </div>
-      <!--     
       <div class="field">
         <label class="label">Gender</label>
         <div class="control">
@@ -224,7 +70,7 @@
             <input type="radio" name="Gender" value="female" /> Female
           </label>
         </div>
-      </div>-->
+      </div>
 
       <div class="field">
         <label class="label">Upload Document (Optional)</label>
@@ -242,7 +88,7 @@
                 <span class="file-icon">
                   <i class="fas fa-upload"></i>
                 </span>
-                <span class="file-label"> <br>Choose a file </span>
+                <span class="file-label"> Choose a file… </span>
               </span>
               <span class="file-name" id="fileNameDisplay">
                 No file selected
@@ -253,12 +99,29 @@
       </div>
       <input type="hidden" name="filename" id="actualFilename" />
 
-     
-      
+      <div class="field">
+        <label class="label">Agree to Terms</label>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox" name="Agree To Terms" value="yes" /> I agree
+            to the terms and conditions
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Additional Information</label>
+        <div class="control">
+          <textarea
+            class="textarea"
+            placeholder="Any additional information"
+            name="Notes"
+          ></textarea>
+        </div>
+      </div>
       <div class="field is-grouped">
         <div class="control">
           <button class="button is-primary" type="submit" id="submit-button">
-            Enter
+            Sign Up
           </button>
         </div>
         <div class="control">
@@ -392,8 +255,8 @@
       });
     </script>
     
-    </center>
-    <iframe id="I1" height="900" name="I1" src="https://docs.google.com/spreadsheets/d/1e55FvBlEJ2JjJSR7e6S6LLZCIKq0RVJR5Lxb2twqL1w/edit?gid=0#gid=0" style="width: 100%">
+    
+    <iframe id="I1" height="900" name="I1" src="https://docs.google.com/spreadsheets/d/1e55FvBlEJ2JjJSR7e6S6LLZCIKq0RVJR5Lxb2twqL1w/edit?gid=0#gid=0" width="90%">
 	Your browser does not support inline frames or is currently configured not to display inline frames.
 	</iframe>
     
