@@ -1,31 +1,58 @@
 ﻿<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />    -->
     <title>2025 Light Green Notes with sheets and upload file</title>
-   
+      <style type="text/css">
+.auto-style1 {
+  text-align: center;
+}
+.center-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body {
+  background-color: #99FF66;
+}
+table {
+  width: 100%;
+}
+input.input[type=date], input.input[type=time], input.input[type=tel], input.input[type=email], input.input[type=text], textarea.textarea, select.form-control {
+  width: 200px;
+}
+textarea.textarea {
+  height: 80px;
+}
+#message {
+  display: none;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+</style>
+
   </head>
-  <body style="background-color: #99FF66">
-<center>          
-    <section class="auto-style1">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">2025 Marie's Notes Light Green Notes with sheets and upload file</h1>
-        </div>
+<body>
+  <section class="auto-style1 center-section">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">2025-2026 Marie's Notes Light Green Notes with sheets and upload file option
+		(Updated 2-19-2026)</h1>
       </div>
-    </section>
-    
-   
-    
-     
-    
-    
-    
-    <span></span>
-  <form id="form" class="container m-4 pl-4">
+    </div>
+  </section>
+
+    <table>
+    <tbody>
+    <tr>
+      <td class="auto-style1" style="width: 348px; vertical-align: top;"><form id="form" class="container m-4 pl-4">
     	<div class="auto-style1">
     <!--Entry Date     -->
       <div class="field">
@@ -35,7 +62,7 @@
             class="input"
             type="date"
             placeholder="Entry Date"
-            name="Entry Date" style="width: 212px"
+            name="Entry Date"
           />
         </div>
       </div>
@@ -49,7 +76,7 @@
             class="input"
             type="date"
             placeholder="Last Contact"
-            name="Last Contact" style="width: 209px"
+            name="Last Contact"
           />
         </div>
       </div>
@@ -79,7 +106,7 @@
             class="input"
             type="text"
             placeholder="Website"
-            name="Website" style="width: 208px"
+            name="Website"
           />
         </div>
       </div>
@@ -96,7 +123,7 @@
             class="input"
             type="email"
             placeholder="Your Email"
-            name="Email" style="width: 206px"
+            name="Email"
           />
         </div>
       </div>
@@ -107,7 +134,7 @@
           <textarea
             class="textarea"
             placeholder="Notes"
-            name="Notes" style="width: 253px; height: 82px"
+            name="Notes"
           ></textarea>
         </div>
       </div>
@@ -120,18 +147,24 @@
        <!--dropdown -->
             <div class="field">
            <label class="label">Clinic or Doctor</label>
+    <br>
     <select class="form-control form-control-sm" 
     id="Clinic Or Doctor" 
-    name="Clinic or Doctor" required>
-      <option value="" selected>Choose...</option>
+    name="Clinic or Doctor">
+      <option value="" selected>Choose...updated 2-19-26</option>
       <option value="EyeHealth Northwest">EyeHealth Northwest 503-656-4221</option>
       <option value="PROVIDENCE HEART CLINIC">PROVIDENCE HEART CLINIC (Alejandro Perez) 503-962-1000</option>
       <option value="Dr Kevin J. Jamison">Neurological Specialties(Dr Kevin J. Jamison) 503-742-6900</option>
       <option value="Other">Other</option>
       <option value="David Sr">David Sr</option>
+      <option value="Amanda Allan Vandlac (Oregon Clinic Urology)">Amanda Allan Vandlac, MD 503-488-2323 The Oregon Clinic Urology</option>
+      <option value="Robert G. Wheeler (Oregon Clinic Pulmonary)">Robert G. Wheeler, MD 503-297-3778 The Oregon Clinic Pulmonary Critical Care</option>
+      <option value="Dr Rogosin (Hematology-Blood) Willamette Falls ">Dr Rogosin (Hematology-Blood) Willamette Falls</option>
       
-      <option value="Ashley-Caregiver">Ashley-Caregiver</option>
-      <option value="Providence PT">Providence PT</option>
+         <!--<option value="something">something</option>-->
+      
+      <option value="Ashley-Caregiver Family Resource">Ashley-Caregiver Family Resource</option>
+      <option value="Providence  Home Health PT">Providence Home Health PT</option>
       <option value="Canby Immediate Care">Canby Immediate Care 503-483-9226</option>
       <option value="Eastside Ortho">Eastside Ortho 503 659 1769</option> 
       <option value="Willamette Falls Hostipal">Willamette Falls Hostipal 503-656-1631</option>
@@ -161,7 +194,7 @@
             class="input"
             type="date"
             placeholder="Appointment Date"
-            name="Appointment Date" style="width: 203px"
+            name="Appointment Date"
           />
         </div>
       </div>
@@ -173,7 +206,7 @@
             class="input"
             type="time"
             placeholder="Appointment Time"
-            name="Appointment Time" style="width: 198px"
+            name="Appointment Time"
           />
         </div>
       </div>
@@ -183,22 +216,21 @@
           <textarea
             class="textarea"
             placeholder="Any additional information"
-            name="Additional Information" style="width: 275px; height: 91px"
+            name="Additional Information"
           ></textarea>
         </div>
       </div>
-      
-      
-       <div class="field">
+     <div class="field">
         <label class="label">Followup</label>
         <div class="control">
           <label class="checkbox">
             <input type="checkbox" 
             name="Followup" 
-            value="yes" /> 
-          </label>
-        </div>
-      </div>
+            value="yes"
+        ></label>
+           
+    </div>
+     </div>
       <!--     
       <div class="field">
         <label class="label">Gender</label>
@@ -231,16 +263,14 @@
                 <span class="file-label"> <br>Choose a file </span>
               </span>
               <span class="file-name" id="fileNameDisplay">
-                No file selected
-              </span>
+                No file selected</span>
+              <br><a href="https://drive.google.com/drive/folders/1HmtkRcQmTcwLFaRSpQJYc3rU829k3CFb?usp=sharing" target="_blank" rel="noopener noreferrer">Check Folder Upload</a><br>
+		            
             </label>
           </div>
         </div>
       </div>
-      <input type="hidden" name="filename" id="actualFilename" />
-
-     
-      
+      <input type="hidden" name="filename" id="actualFilename">
       <div class="field is-grouped">
         <div class="control">
           <button class="button is-primary" type="submit" id="submit-button">
@@ -255,21 +285,21 @@
           >
             Cancel
           </button>
-        	<br><br>
-			<a href="https://drive.google.com/drive/folders/1HmtkRcQmTcwLFaRSpQJYc3rU829k3CFb">
-			Check on file that is uploaded</a></div>
+          <br><br>
+
+    </div>
       </div>
-    	</div>
-    </form>
+</div>
+      </form></td>
+      <td style="text-align: center;">
+  <iframe id="I1" height="900" name="I1" title="Marie's Notes Spreadsheet" src="https://docs.google.com/spreadsheets/d/1e55FvBlEJ2JjJSR7e6S6LLZCIKq0RVJR5Lxb2twqL1w/edit?gid=0#gid=0" style="width: 1215px">Your browser does not support inline frames or is currently configured not to display inline frames.
+  </iframe>
+</td>
+    </tr>
+    </tbody>
+  </table>
     <div
       id="message"
-      style="
-        display: none;
-        margin: 20px;
-        padding: 10px;
-        border-radius: 4px;
-        font-weight: bold;
-      "
     ></div>
 
     <script>
@@ -384,11 +414,6 @@
    
     
     
-    <a href="https://docs.google.com/spreadsheets/d/1e55FvBlEJ2JjJSR7e6S6LLZCIKq0RVJR5Lxb2twqL1w/edit?gid=0#gid=0">
-  2025 Light Green Notes with sheets and upload file</a>
-  <iframe id="I1" height="900" name="I1" src="https://docs.google.com/spreadsheets/d/1e55FvBlEJ2JjJSR7e6S6LLZCIKq0RVJR5Lxb2twqL1w/edit?gid=0#gid=0" style="width: 100%">Your browser does not support inline frames or is currently configured not to display inline frames.
-	</iframe>
-    </center>
-    
+   
   </body>
 </html>
